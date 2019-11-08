@@ -1,12 +1,12 @@
 class BurgersController < ApplicationController
     def index
         burgers = Burger.all 
-        render json: burgers
+        render json: burgers.to_json()
     end
 
     def show
         burger = Burger.find(params[:id]);
-        render json: burger
+        render json: burger.to_json()
     end
 
     def ingredients   
@@ -14,7 +14,6 @@ class BurgersController < ApplicationController
         thisBurgersIngredients = Burger.where("recipe_id = ? ", recipeID)
 
         render json: thisBurgersIngredients.to_json(serialized_data)
-     
     end
 
     private 
@@ -23,7 +22,7 @@ class BurgersController < ApplicationController
             :include => {
                 :ingredient => 
                 {:except => [:created_at, :updated_at ]},
-                
+
                 :recipe =>
                 {:except => [:created_at, :updated_at ]}
             },
