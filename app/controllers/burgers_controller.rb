@@ -11,8 +11,23 @@ class BurgersController < ApplicationController
 
     def ingredients   
         recipeID = params['id']
-        render json: thisBurgersIngredients = Burger.where("recipe_id = ? ", recipeID)
+        thisBurgersIngredients = Burger.where("recipe_id = ? ", recipeID)
+
+        render json: thisBurgersIngredients.to_json(serialized_data)
+     
     end
 
-
+    private 
+    def serialized_data
+        {
+            :include => {
+                :ingredient => 
+                {:except => [:created_at, :updated_at ]},
+                
+                :recipe =>
+                {:except => [:created_at, :updated_at ]}
+            },
+            :except => [:created_at, :updated_at]
+        }
+    end
 end
