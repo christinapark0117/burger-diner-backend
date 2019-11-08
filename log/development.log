@@ -1221,3 +1221,143 @@ Migrating to CreateBurgers (20191108151131)
   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 12], ["index", 10], ["created_at", "2019-11-08 17:06:54.943813"], ["updated_at", "2019-11-08 17:06:54.943813"]]
   [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/ingredients" for ::1 at 2019-11-08 12:29:06 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IngredientsController#index as HTML
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 7017)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-11-08 12:29:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/ingredients" for ::1 at 2019-11-08 12:31:19 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/christinapark/Development/mod-3-javascript/mod-3-project-burger-diner/burger-diner-backend/app/controllers/ingredients_controller.rb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+...= Ingredient.find_by(:id params[:id])
+...                         ^~~~~~
+/Users/christinapark/Development/mod-3-javascript/mod-3-project-burger-diner/burger-diner-backend/app/controllers/ingredients_controller.rb:9: syntax error, unexpected ')', expecting end
+...edient.find_by(:id params[:id])
+...                              ^):
+  
+app/controllers/ingredients_controller.rb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/ingredients_controller.rb:9: syntax error, unexpected ')', expecting end
+app/controllers/ingredients_controller.rb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/ingredients_controller.rb:9: syntax error, unexpected ')', expecting end
+Started GET "/ingredients" for ::1 at 2019-11-08 12:31:29 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by IngredientsController#index as HTML
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 6499)
+
+
+Started GET "/ingredients/1" for ::1 at 2019-11-08 12:31:37 -0500
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/ingredients_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 805)
+
+
+Started GET "/ingredients/1" for ::1 at 2019-11-08 12:32:04 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/ingredients_controller.rb:9:in `show'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 5301)
+
+
+Started GET "/ingredients/4" for ::1 at 2019-11-08 12:32:43 -0500
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE (4) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/ingredients_controller.rb:9:in `show'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 765)
+
+
+Started GET "/ingredients/4" for ::1 at 2019-11-08 12:32:50 -0500
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE (4) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/ingredients_controller.rb:9:in `show'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 756)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-08 12:32:56 -0500
+Processing by IngredientsController#index as HTML
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1811)
+
+
+Started GET "/ingredients/4" for ::1 at 2019-11-08 12:33:06 -0500
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE (4) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/ingredients_controller.rb:9:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 747)
+
+
+Started GET "/ingredients/4" for ::1 at 2019-11-08 12:33:32 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE (4) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/ingredients_controller.rb:9:in `show'
+  [1m[36mCACHE Ingredient Load (0.0ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE (4) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ (byebug):1:in `show'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ (byebug):1:in `show'
+Started GET "/ingredients/4" for ::1 at 2019-11-08 12:36:01 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/ingredients_controller.rb:9:in `show'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 6204)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-08 12:36:06 -0500
+Processing by IngredientsController#index as HTML
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1829)
+
+
+Started GET "/ingredients/10" for ::1 at 2019-11-08 12:36:12 -0500
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/ingredients_controller.rb:9:in `show'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 627)
+
+
