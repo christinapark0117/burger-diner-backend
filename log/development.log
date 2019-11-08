@@ -23,3 +23,1201 @@ Migrating to CreateBurgers (20191108151131)
   [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (1.0ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger"], ["created_at", "2019-11-08 16:47:55.796403"], ["updated_at", "2019-11-08 16:47:55.796403"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger"], ["created_at", "2019-11-08 16:47:55.800035"], ["updated_at", "2019-11-08 16:47:55.800035"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger Deluxe"], ["created_at", "2019-11-08 16:47:55.803321"], ["updated_at", "2019-11-08 16:47:55.803321"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger Deluxe"], ["created_at", "2019-11-08 16:47:55.806278"], ["updated_at", "2019-11-08 16:47:55.806278"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chicken Burger Deluxe"], ["created_at", "2019-11-08 16:47:55.809256"], ["updated_at", "2019-11-08 16:47:55.809256"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Spicy Chicken Burger Deluxe"], ["created_at", "2019-11-08 16:47:55.812117"], ["updated_at", "2019-11-08 16:47:55.812117"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger Deluxe with Bacon"], ["created_at", "2019-11-08 16:47:55.814783"], ["updated_at", "2019-11-08 16:47:55.814783"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger Deluxe with Bacon"], ["created_at", "2019-11-08 16:47:55.817578"], ["updated_at", "2019-11-08 16:47:55.817578"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ultimate Hamburger Deluxe"], ["created_at", "2019-11-08 16:47:55.830512"], ["updated_at", "2019-11-08 16:47:55.830512"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ultimate Cheeseburger Deluxe"], ["created_at", "2019-11-08 16:47:55.836784"], ["updated_at", "2019-11-08 16:47:55.836784"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger"], ["created_at", "2019-11-08 16:52:25.729871"], ["updated_at", "2019-11-08 16:52:25.729871"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger"], ["created_at", "2019-11-08 16:52:25.732709"], ["updated_at", "2019-11-08 16:52:25.732709"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger Deluxe"], ["created_at", "2019-11-08 16:52:25.735554"], ["updated_at", "2019-11-08 16:52:25.735554"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger Deluxe"], ["created_at", "2019-11-08 16:52:25.738297"], ["updated_at", "2019-11-08 16:52:25.738297"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chicken Burger Deluxe"], ["created_at", "2019-11-08 16:52:25.741211"], ["updated_at", "2019-11-08 16:52:25.741211"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Spicy Chicken Burger Deluxe"], ["created_at", "2019-11-08 16:52:25.743903"], ["updated_at", "2019-11-08 16:52:25.743903"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger Deluxe with Bacon"], ["created_at", "2019-11-08 16:52:25.746717"], ["updated_at", "2019-11-08 16:52:25.746717"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger Deluxe with Bacon"], ["created_at", "2019-11-08 16:52:25.749221"], ["updated_at", "2019-11-08 16:52:25.749221"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ultimate Hamburger Deluxe"], ["created_at", "2019-11-08 16:52:25.751930"], ["updated_at", "2019-11-08 16:52:25.751930"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ultimate Cheeseburger Deluxe"], ["created_at", "2019-11-08 16:52:25.763621"], ["updated_at", "2019-11-08 16:52:25.763621"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Bottom Bun"], ["created_at", "2019-11-08 16:52:25.786808"], ["updated_at", "2019-11-08 16:52:25.786808"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beef Patty"], ["created_at", "2019-11-08 16:52:25.789678"], ["updated_at", "2019-11-08 16:52:25.789678"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chicken Patty"], ["created_at", "2019-11-08 16:52:25.793444"], ["updated_at", "2019-11-08 16:52:25.793444"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Spicy Chicken Patty"], ["created_at", "2019-11-08 16:52:25.798550"], ["updated_at", "2019-11-08 16:52:25.798550"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheese"], ["created_at", "2019-11-08 16:52:25.802232"], ["updated_at", "2019-11-08 16:52:25.802232"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tomatoes"], ["created_at", "2019-11-08 16:52:25.805338"], ["updated_at", "2019-11-08 16:52:25.805338"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Lettuce"], ["created_at", "2019-11-08 16:52:25.808180"], ["updated_at", "2019-11-08 16:52:25.808180"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Bacon"], ["created_at", "2019-11-08 16:52:25.810996"], ["updated_at", "2019-11-08 16:52:25.810996"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Onion"], ["created_at", "2019-11-08 16:52:25.813669"], ["updated_at", "2019-11-08 16:52:25.813669"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Carmelized Mushroom"], ["created_at", "2019-11-08 16:52:25.816435"], ["updated_at", "2019-11-08 16:52:25.816435"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Carmelized Onion"], ["created_at", "2019-11-08 16:52:25.819334"], ["updated_at", "2019-11-08 16:52:25.819334"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Top Bun"], ["created_at", "2019-11-08 16:52:25.822156"], ["updated_at", "2019-11-08 16:52:25.822156"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 11], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 16:52:25.839865"], ["updated_at", "2019-11-08 16:52:25.839865"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 11], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 16:52:25.842283"], ["updated_at", "2019-11-08 16:52:25.842283"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 11], ["ingredient_id", 12], ["index", 3], ["created_at", "2019-11-08 16:52:25.845097"], ["updated_at", "2019-11-08 16:52:25.845097"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 12], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 16:52:25.848073"], ["updated_at", "2019-11-08 16:52:25.848073"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 12], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 16:52:25.850866"], ["updated_at", "2019-11-08 16:52:25.850866"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 12], ["ingredient_id", 5], ["index", 3], ["created_at", "2019-11-08 16:52:25.853717"], ["updated_at", "2019-11-08 16:52:25.853717"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 12], ["ingredient_id", 12], ["index", 4], ["created_at", "2019-11-08 16:52:25.856413"], ["updated_at", "2019-11-08 16:52:25.856413"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 13], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 16:52:25.860242"], ["updated_at", "2019-11-08 16:52:25.860242"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 13], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 16:52:25.873995"], ["updated_at", "2019-11-08 16:52:25.873995"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 13], ["ingredient_id", 6], ["index", 3], ["created_at", "2019-11-08 16:52:25.876818"], ["updated_at", "2019-11-08 16:52:25.876818"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 13], ["ingredient_id", 7], ["index", 4], ["created_at", "2019-11-08 16:52:25.879761"], ["updated_at", "2019-11-08 16:52:25.879761"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 13], ["ingredient_id", 9], ["index", 5], ["created_at", "2019-11-08 16:52:25.882525"], ["updated_at", "2019-11-08 16:52:25.882525"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 13], ["ingredient_id", 12], ["index", 6], ["created_at", "2019-11-08 16:52:25.885195"], ["updated_at", "2019-11-08 16:52:25.885195"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 16:52:25.887785"], ["updated_at", "2019-11-08 16:52:25.887785"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 16:52:25.890622"], ["updated_at", "2019-11-08 16:52:25.890622"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 5], ["index", 3], ["created_at", "2019-11-08 16:52:25.894154"], ["updated_at", "2019-11-08 16:52:25.894154"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 9], ["index", 4], ["created_at", "2019-11-08 16:52:25.897441"], ["updated_at", "2019-11-08 16:52:25.897441"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 6], ["index", 5], ["created_at", "2019-11-08 16:52:25.900955"], ["updated_at", "2019-11-08 16:52:25.900955"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 7], ["index", 6], ["created_at", "2019-11-08 16:52:25.904211"], ["updated_at", "2019-11-08 16:52:25.904211"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 12], ["index", 7], ["created_at", "2019-11-08 16:52:25.906847"], ["updated_at", "2019-11-08 16:52:25.906847"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 15], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 16:52:25.909430"], ["updated_at", "2019-11-08 16:52:25.909430"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 15], ["ingredient_id", 3], ["index", 2], ["created_at", "2019-11-08 16:52:25.911949"], ["updated_at", "2019-11-08 16:52:25.911949"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 15], ["ingredient_id", 7], ["index", 3], ["created_at", "2019-11-08 16:52:25.914701"], ["updated_at", "2019-11-08 16:52:25.914701"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 15], ["ingredient_id", 9], ["index", 4], ["created_at", "2019-11-08 16:52:25.917444"], ["updated_at", "2019-11-08 16:52:25.917444"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 15], ["ingredient_id", 6], ["index", 5], ["created_at", "2019-11-08 16:52:25.920143"], ["updated_at", "2019-11-08 16:52:25.920143"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 15], ["ingredient_id", 12], ["index", 6], ["created_at", "2019-11-08 16:52:25.922671"], ["updated_at", "2019-11-08 16:52:25.922671"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 16], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 16:52:25.925189"], ["updated_at", "2019-11-08 16:52:25.925189"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 16], ["ingredient_id", 4], ["index", 2], ["created_at", "2019-11-08 16:52:25.927849"], ["updated_at", "2019-11-08 16:52:25.927849"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 16], ["ingredient_id", 7], ["index", 3], ["created_at", "2019-11-08 16:52:25.930531"], ["updated_at", "2019-11-08 16:52:25.930531"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 16], ["ingredient_id", 9], ["index", 4], ["created_at", "2019-11-08 16:52:25.933013"], ["updated_at", "2019-11-08 16:52:25.933013"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 16], ["ingredient_id", 6], ["index", 5], ["created_at", "2019-11-08 16:52:25.935746"], ["updated_at", "2019-11-08 16:52:25.935746"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 16], ["ingredient_id", 12], ["index", 6], ["created_at", "2019-11-08 16:52:25.944953"], ["updated_at", "2019-11-08 16:52:25.944953"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 16:52:25.947567"], ["updated_at", "2019-11-08 16:52:25.947567"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 16:52:25.950361"], ["updated_at", "2019-11-08 16:52:25.950361"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 6], ["index", 3], ["created_at", "2019-11-08 16:52:25.953000"], ["updated_at", "2019-11-08 16:52:25.953000"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 7], ["index", 4], ["created_at", "2019-11-08 16:52:25.955526"], ["updated_at", "2019-11-08 16:52:25.955526"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 8], ["index", 5], ["created_at", "2019-11-08 16:52:25.958146"], ["updated_at", "2019-11-08 16:52:25.958146"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 9], ["index", 6], ["created_at", "2019-11-08 16:52:25.961123"], ["updated_at", "2019-11-08 16:52:25.961123"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 12], ["index", 7], ["created_at", "2019-11-08 16:52:25.963921"], ["updated_at", "2019-11-08 16:52:25.963921"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 16:52:25.966470"], ["updated_at", "2019-11-08 16:52:25.966470"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 16:52:25.969204"], ["updated_at", "2019-11-08 16:52:25.969204"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 5], ["index", 3], ["created_at", "2019-11-08 16:52:25.971764"], ["updated_at", "2019-11-08 16:52:25.971764"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 8], ["index", 4], ["created_at", "2019-11-08 16:52:25.974421"], ["updated_at", "2019-11-08 16:52:25.974421"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 9], ["index", 5], ["created_at", "2019-11-08 16:52:25.976965"], ["updated_at", "2019-11-08 16:52:25.976965"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 6], ["index", 6], ["created_at", "2019-11-08 16:52:25.979561"], ["updated_at", "2019-11-08 16:52:25.979561"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 7], ["index", 7], ["created_at", "2019-11-08 16:52:25.982057"], ["updated_at", "2019-11-08 16:52:25.982057"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 12], ["index", 8], ["created_at", "2019-11-08 16:52:25.984594"], ["updated_at", "2019-11-08 16:52:25.984594"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 16:52:25.987207"], ["updated_at", "2019-11-08 16:52:25.987207"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 16:52:25.989638"], ["updated_at", "2019-11-08 16:52:25.989638"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 10], ["index", 3], ["created_at", "2019-11-08 16:52:25.992433"], ["updated_at", "2019-11-08 16:52:25.992433"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 6], ["index", 4], ["created_at", "2019-11-08 16:52:25.995108"], ["updated_at", "2019-11-08 16:52:25.995108"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 11], ["index", 5], ["created_at", "2019-11-08 16:52:25.998066"], ["updated_at", "2019-11-08 16:52:25.998066"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 7], ["index", 6], ["created_at", "2019-11-08 16:52:26.000872"], ["updated_at", "2019-11-08 16:52:26.000872"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 8], ["index", 7], ["created_at", "2019-11-08 16:52:26.009048"], ["updated_at", "2019-11-08 16:52:26.009048"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 9], ["index", 8], ["created_at", "2019-11-08 16:52:26.012070"], ["updated_at", "2019-11-08 16:52:26.012070"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 12], ["index", 9], ["created_at", "2019-11-08 16:52:26.014462"], ["updated_at", "2019-11-08 16:52:26.014462"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 16:52:26.016950"], ["updated_at", "2019-11-08 16:52:26.016950"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 16:52:26.019367"], ["updated_at", "2019-11-08 16:52:26.019367"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 5], ["index", 3], ["created_at", "2019-11-08 16:52:26.021818"], ["updated_at", "2019-11-08 16:52:26.021818"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 10], ["index", 4], ["created_at", "2019-11-08 16:52:26.024213"], ["updated_at", "2019-11-08 16:52:26.024213"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 6], ["index", 5], ["created_at", "2019-11-08 16:52:26.026723"], ["updated_at", "2019-11-08 16:52:26.026723"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 11], ["index", 6], ["created_at", "2019-11-08 16:52:26.029047"], ["updated_at", "2019-11-08 16:52:26.029047"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 7], ["index", 7], ["created_at", "2019-11-08 16:52:26.031436"], ["updated_at", "2019-11-08 16:52:26.031436"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 8], ["index", 8], ["created_at", "2019-11-08 16:52:26.034112"], ["updated_at", "2019-11-08 16:52:26.034112"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 9], ["index", 9], ["created_at", "2019-11-08 16:52:26.036602"], ["updated_at", "2019-11-08 16:52:26.036602"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 12], ["index", 10], ["created_at", "2019-11-08 16:52:26.039120"], ["updated_at", "2019-11-08 16:52:26.039120"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE "burgers"."recipe_id" = ? LIMIT ?[0m  [["recipe_id", 1], ["LIMIT", 11]]
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" ORDER BY "burgers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" ORDER BY "burgers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBurger Load (0.1ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBurger Load (0.1ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE "burgers"."recipe_id" = ? LIMIT ?[0m  [["recipe_id", 1], ["LIMIT", 11]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "burgers" ON "ingredients"."id" = "burgers"."ingredient_id" WHERE "burgers"."recipe_id" = ? LIMIT ?[0m  [["recipe_id", 1], ["LIMIT", 11]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" ORDER BY "ingredients"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBurger Load (0.1ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" ORDER BY "burgers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBurger Load (0.1ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" ORDER BY "burgers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.6ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 13]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 14]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 16]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 17]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 18]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 19]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 20]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 13]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 14]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 16]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 17]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 18]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 19]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 20]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 21]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 22]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.5ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 23]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 24]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 25]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 26]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 27]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 28]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 29]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 30]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 31]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 32]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 33]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 34]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 35]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 36]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 37]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 38]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 39]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 40]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 41]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 42]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 43]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 44]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 45]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 46]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 47]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 48]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 49]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 50]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 51]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 52]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 53]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 54]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 55]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 56]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 57]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 58]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 59]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 60]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 61]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 62]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 63]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 64]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 65]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 66]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger"], ["created_at", "2019-11-08 17:05:08.585298"], ["updated_at", "2019-11-08 17:05:08.585298"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger"], ["created_at", "2019-11-08 17:05:08.587992"], ["updated_at", "2019-11-08 17:05:08.587992"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger Deluxe"], ["created_at", "2019-11-08 17:05:08.590651"], ["updated_at", "2019-11-08 17:05:08.590651"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger Deluxe"], ["created_at", "2019-11-08 17:05:08.593080"], ["updated_at", "2019-11-08 17:05:08.593080"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chicken Burger Deluxe"], ["created_at", "2019-11-08 17:05:08.595458"], ["updated_at", "2019-11-08 17:05:08.595458"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Spicy Chicken Burger Deluxe"], ["created_at", "2019-11-08 17:05:08.597843"], ["updated_at", "2019-11-08 17:05:08.597843"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger Deluxe with Bacon"], ["created_at", "2019-11-08 17:05:08.600338"], ["updated_at", "2019-11-08 17:05:08.600338"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger Deluxe with Bacon"], ["created_at", "2019-11-08 17:05:08.602636"], ["updated_at", "2019-11-08 17:05:08.602636"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ultimate Hamburger Deluxe"], ["created_at", "2019-11-08 17:05:08.605155"], ["updated_at", "2019-11-08 17:05:08.605155"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ultimate Cheeseburger Deluxe"], ["created_at", "2019-11-08 17:05:08.607754"], ["updated_at", "2019-11-08 17:05:08.607754"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Bottom Bun"], ["created_at", "2019-11-08 17:05:08.610433"], ["updated_at", "2019-11-08 17:05:08.610433"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beef Patty"], ["created_at", "2019-11-08 17:05:08.613114"], ["updated_at", "2019-11-08 17:05:08.613114"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chicken Patty"], ["created_at", "2019-11-08 17:05:08.615430"], ["updated_at", "2019-11-08 17:05:08.615430"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Spicy Chicken Patty"], ["created_at", "2019-11-08 17:05:08.617777"], ["updated_at", "2019-11-08 17:05:08.617777"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheese"], ["created_at", "2019-11-08 17:05:08.620064"], ["updated_at", "2019-11-08 17:05:08.620064"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tomatoes"], ["created_at", "2019-11-08 17:05:08.622798"], ["updated_at", "2019-11-08 17:05:08.622798"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Lettuce"], ["created_at", "2019-11-08 17:05:08.626181"], ["updated_at", "2019-11-08 17:05:08.626181"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Bacon"], ["created_at", "2019-11-08 17:05:08.629402"], ["updated_at", "2019-11-08 17:05:08.629402"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Onion"], ["created_at", "2019-11-08 17:05:08.632525"], ["updated_at", "2019-11-08 17:05:08.632525"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Carmelized Mushroom"], ["created_at", "2019-11-08 17:05:08.635749"], ["updated_at", "2019-11-08 17:05:08.635749"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Carmelized Onion"], ["created_at", "2019-11-08 17:05:08.644227"], ["updated_at", "2019-11-08 17:05:08.644227"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Top Bun"], ["created_at", "2019-11-08 17:05:08.646818"], ["updated_at", "2019-11-08 17:05:08.646818"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 21], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-08 17:05:08.651831"], ["updated_at", "2019-11-08 17:05:08.651831"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 21], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-08 17:05:08.654773"], ["updated_at", "2019-11-08 17:05:08.654773"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 21], ["ingredient_id", 24], ["index", 3], ["created_at", "2019-11-08 17:05:08.657619"], ["updated_at", "2019-11-08 17:05:08.657619"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 22], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-08 17:05:08.660604"], ["updated_at", "2019-11-08 17:05:08.660604"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 22], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-08 17:05:08.663726"], ["updated_at", "2019-11-08 17:05:08.663726"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 22], ["ingredient_id", 17], ["index", 3], ["created_at", "2019-11-08 17:05:08.666575"], ["updated_at", "2019-11-08 17:05:08.666575"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 22], ["ingredient_id", 24], ["index", 4], ["created_at", "2019-11-08 17:05:08.669150"], ["updated_at", "2019-11-08 17:05:08.669150"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 23], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-08 17:05:08.671737"], ["updated_at", "2019-11-08 17:05:08.671737"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 23], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-08 17:05:08.674160"], ["updated_at", "2019-11-08 17:05:08.674160"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 23], ["ingredient_id", 18], ["index", 3], ["created_at", "2019-11-08 17:05:08.676372"], ["updated_at", "2019-11-08 17:05:08.676372"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 23], ["ingredient_id", 19], ["index", 4], ["created_at", "2019-11-08 17:05:08.678858"], ["updated_at", "2019-11-08 17:05:08.678858"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 23], ["ingredient_id", 21], ["index", 5], ["created_at", "2019-11-08 17:05:08.681213"], ["updated_at", "2019-11-08 17:05:08.681213"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 23], ["ingredient_id", 24], ["index", 6], ["created_at", "2019-11-08 17:05:08.683528"], ["updated_at", "2019-11-08 17:05:08.683528"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 24], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-08 17:05:08.685794"], ["updated_at", "2019-11-08 17:05:08.685794"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 24], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-08 17:05:08.688433"], ["updated_at", "2019-11-08 17:05:08.688433"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 24], ["ingredient_id", 17], ["index", 3], ["created_at", "2019-11-08 17:05:08.690883"], ["updated_at", "2019-11-08 17:05:08.690883"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 24], ["ingredient_id", 21], ["index", 4], ["created_at", "2019-11-08 17:05:08.693211"], ["updated_at", "2019-11-08 17:05:08.693211"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 24], ["ingredient_id", 18], ["index", 5], ["created_at", "2019-11-08 17:05:08.695604"], ["updated_at", "2019-11-08 17:05:08.695604"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 24], ["ingredient_id", 19], ["index", 6], ["created_at", "2019-11-08 17:05:08.697979"], ["updated_at", "2019-11-08 17:05:08.697979"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 24], ["ingredient_id", 24], ["index", 7], ["created_at", "2019-11-08 17:05:08.700632"], ["updated_at", "2019-11-08 17:05:08.700632"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 25], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-08 17:05:08.708050"], ["updated_at", "2019-11-08 17:05:08.708050"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 25], ["ingredient_id", 15], ["index", 2], ["created_at", "2019-11-08 17:05:08.710528"], ["updated_at", "2019-11-08 17:05:08.710528"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 25], ["ingredient_id", 19], ["index", 3], ["created_at", "2019-11-08 17:05:08.713259"], ["updated_at", "2019-11-08 17:05:08.713259"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 25], ["ingredient_id", 21], ["index", 4], ["created_at", "2019-11-08 17:05:08.715665"], ["updated_at", "2019-11-08 17:05:08.715665"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 25], ["ingredient_id", 18], ["index", 5], ["created_at", "2019-11-08 17:05:08.718152"], ["updated_at", "2019-11-08 17:05:08.718152"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 25], ["ingredient_id", 24], ["index", 6], ["created_at", "2019-11-08 17:05:08.720623"], ["updated_at", "2019-11-08 17:05:08.720623"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 26], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-08 17:05:08.723175"], ["updated_at", "2019-11-08 17:05:08.723175"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 26], ["ingredient_id", 16], ["index", 2], ["created_at", "2019-11-08 17:05:08.725537"], ["updated_at", "2019-11-08 17:05:08.725537"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 26], ["ingredient_id", 19], ["index", 3], ["created_at", "2019-11-08 17:05:08.727946"], ["updated_at", "2019-11-08 17:05:08.727946"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 26], ["ingredient_id", 21], ["index", 4], ["created_at", "2019-11-08 17:05:08.730521"], ["updated_at", "2019-11-08 17:05:08.730521"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 26], ["ingredient_id", 18], ["index", 5], ["created_at", "2019-11-08 17:05:08.733307"], ["updated_at", "2019-11-08 17:05:08.733307"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 26], ["ingredient_id", 24], ["index", 6], ["created_at", "2019-11-08 17:05:08.735766"], ["updated_at", "2019-11-08 17:05:08.735766"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 27], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-08 17:05:08.738104"], ["updated_at", "2019-11-08 17:05:08.738104"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 27], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-08 17:05:08.740658"], ["updated_at", "2019-11-08 17:05:08.740658"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 27], ["ingredient_id", 18], ["index", 3], ["created_at", "2019-11-08 17:05:08.743164"], ["updated_at", "2019-11-08 17:05:08.743164"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 27], ["ingredient_id", 19], ["index", 4], ["created_at", "2019-11-08 17:05:08.745685"], ["updated_at", "2019-11-08 17:05:08.745685"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 27], ["ingredient_id", 20], ["index", 5], ["created_at", "2019-11-08 17:05:08.748237"], ["updated_at", "2019-11-08 17:05:08.748237"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 27], ["ingredient_id", 21], ["index", 6], ["created_at", "2019-11-08 17:05:08.750683"], ["updated_at", "2019-11-08 17:05:08.750683"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 27], ["ingredient_id", 24], ["index", 7], ["created_at", "2019-11-08 17:05:08.753014"], ["updated_at", "2019-11-08 17:05:08.753014"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 28], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-08 17:05:08.755389"], ["updated_at", "2019-11-08 17:05:08.755389"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 28], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-08 17:05:08.757985"], ["updated_at", "2019-11-08 17:05:08.757985"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 28], ["ingredient_id", 17], ["index", 3], ["created_at", "2019-11-08 17:05:08.761040"], ["updated_at", "2019-11-08 17:05:08.761040"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 28], ["ingredient_id", 20], ["index", 4], ["created_at", "2019-11-08 17:05:08.764073"], ["updated_at", "2019-11-08 17:05:08.764073"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 28], ["ingredient_id", 21], ["index", 5], ["created_at", "2019-11-08 17:05:08.772199"], ["updated_at", "2019-11-08 17:05:08.772199"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 28], ["ingredient_id", 18], ["index", 6], ["created_at", "2019-11-08 17:05:08.774891"], ["updated_at", "2019-11-08 17:05:08.774891"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 28], ["ingredient_id", 19], ["index", 7], ["created_at", "2019-11-08 17:05:08.777517"], ["updated_at", "2019-11-08 17:05:08.777517"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 28], ["ingredient_id", 24], ["index", 8], ["created_at", "2019-11-08 17:05:08.779989"], ["updated_at", "2019-11-08 17:05:08.779989"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 29], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-08 17:05:08.782375"], ["updated_at", "2019-11-08 17:05:08.782375"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 29], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-08 17:05:08.784928"], ["updated_at", "2019-11-08 17:05:08.784928"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 29], ["ingredient_id", 22], ["index", 3], ["created_at", "2019-11-08 17:05:08.787192"], ["updated_at", "2019-11-08 17:05:08.787192"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 29], ["ingredient_id", 18], ["index", 4], ["created_at", "2019-11-08 17:05:08.789676"], ["updated_at", "2019-11-08 17:05:08.789676"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 29], ["ingredient_id", 23], ["index", 5], ["created_at", "2019-11-08 17:05:08.792067"], ["updated_at", "2019-11-08 17:05:08.792067"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 29], ["ingredient_id", 19], ["index", 6], ["created_at", "2019-11-08 17:05:08.794725"], ["updated_at", "2019-11-08 17:05:08.794725"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 29], ["ingredient_id", 20], ["index", 7], ["created_at", "2019-11-08 17:05:08.797058"], ["updated_at", "2019-11-08 17:05:08.797058"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 29], ["ingredient_id", 21], ["index", 8], ["created_at", "2019-11-08 17:05:08.799365"], ["updated_at", "2019-11-08 17:05:08.799365"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 29], ["ingredient_id", 24], ["index", 9], ["created_at", "2019-11-08 17:05:08.801650"], ["updated_at", "2019-11-08 17:05:08.801650"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 30], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-08 17:05:08.804008"], ["updated_at", "2019-11-08 17:05:08.804008"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 30], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-08 17:05:08.806460"], ["updated_at", "2019-11-08 17:05:08.806460"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 30], ["ingredient_id", 17], ["index", 3], ["created_at", "2019-11-08 17:05:08.808912"], ["updated_at", "2019-11-08 17:05:08.808912"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 30], ["ingredient_id", 22], ["index", 4], ["created_at", "2019-11-08 17:05:08.811124"], ["updated_at", "2019-11-08 17:05:08.811124"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 30], ["ingredient_id", 18], ["index", 5], ["created_at", "2019-11-08 17:05:08.813427"], ["updated_at", "2019-11-08 17:05:08.813427"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 30], ["ingredient_id", 23], ["index", 6], ["created_at", "2019-11-08 17:05:08.815741"], ["updated_at", "2019-11-08 17:05:08.815741"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 30], ["ingredient_id", 19], ["index", 7], ["created_at", "2019-11-08 17:05:08.818517"], ["updated_at", "2019-11-08 17:05:08.818517"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 30], ["ingredient_id", 20], ["index", 8], ["created_at", "2019-11-08 17:05:08.821087"], ["updated_at", "2019-11-08 17:05:08.821087"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 30], ["ingredient_id", 21], ["index", 9], ["created_at", "2019-11-08 17:05:08.823760"], ["updated_at", "2019-11-08 17:05:08.823760"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 30], ["ingredient_id", 24], ["index", 10], ["created_at", "2019-11-08 17:05:08.826414"], ["updated_at", "2019-11-08 17:05:08.826414"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRecipes (20191108151037)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191108151037"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateIngredients (20191108151055)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image_url" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191108151055"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBurgers (20191108151131)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "burgers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "recipe_id" integer, "ingredient_id" integer, "index" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191108151131"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-11-08 17:06:45.786176"], ["updated_at", "2019-11-08 17:06:45.786176"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mBurger Load (0.1ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger"], ["created_at", "2019-11-08 17:06:54.647375"], ["updated_at", "2019-11-08 17:06:54.647375"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger"], ["created_at", "2019-11-08 17:06:54.650235"], ["updated_at", "2019-11-08 17:06:54.650235"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger Deluxe"], ["created_at", "2019-11-08 17:06:54.653208"], ["updated_at", "2019-11-08 17:06:54.653208"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger Deluxe"], ["created_at", "2019-11-08 17:06:54.655794"], ["updated_at", "2019-11-08 17:06:54.655794"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chicken Burger Deluxe"], ["created_at", "2019-11-08 17:06:54.658483"], ["updated_at", "2019-11-08 17:06:54.658483"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Spicy Chicken Burger Deluxe"], ["created_at", "2019-11-08 17:06:54.661176"], ["updated_at", "2019-11-08 17:06:54.661176"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger Deluxe with Bacon"], ["created_at", "2019-11-08 17:06:54.663814"], ["updated_at", "2019-11-08 17:06:54.663814"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger Deluxe with Bacon"], ["created_at", "2019-11-08 17:06:54.678931"], ["updated_at", "2019-11-08 17:06:54.678931"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ultimate Hamburger Deluxe"], ["created_at", "2019-11-08 17:06:54.682349"], ["updated_at", "2019-11-08 17:06:54.682349"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ultimate Cheeseburger Deluxe"], ["created_at", "2019-11-08 17:06:54.685738"], ["updated_at", "2019-11-08 17:06:54.685738"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Bottom Bun"], ["created_at", "2019-11-08 17:06:54.702425"], ["updated_at", "2019-11-08 17:06:54.702425"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beef Patty"], ["created_at", "2019-11-08 17:06:54.705173"], ["updated_at", "2019-11-08 17:06:54.705173"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chicken Patty"], ["created_at", "2019-11-08 17:06:54.708870"], ["updated_at", "2019-11-08 17:06:54.708870"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Spicy Chicken Patty"], ["created_at", "2019-11-08 17:06:54.712243"], ["updated_at", "2019-11-08 17:06:54.712243"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheese"], ["created_at", "2019-11-08 17:06:54.715150"], ["updated_at", "2019-11-08 17:06:54.715150"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tomatoes"], ["created_at", "2019-11-08 17:06:54.717989"], ["updated_at", "2019-11-08 17:06:54.717989"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Lettuce"], ["created_at", "2019-11-08 17:06:54.721132"], ["updated_at", "2019-11-08 17:06:54.721132"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Bacon"], ["created_at", "2019-11-08 17:06:54.724261"], ["updated_at", "2019-11-08 17:06:54.724261"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Onion"], ["created_at", "2019-11-08 17:06:54.727724"], ["updated_at", "2019-11-08 17:06:54.727724"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Carmelized Mushroom"], ["created_at", "2019-11-08 17:06:54.732610"], ["updated_at", "2019-11-08 17:06:54.732610"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Carmelized Onion"], ["created_at", "2019-11-08 17:06:54.735639"], ["updated_at", "2019-11-08 17:06:54.735639"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Top Bun"], ["created_at", "2019-11-08 17:06:54.738610"], ["updated_at", "2019-11-08 17:06:54.738610"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 1], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 17:06:54.747066"], ["updated_at", "2019-11-08 17:06:54.747066"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 1], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 17:06:54.749474"], ["updated_at", "2019-11-08 17:06:54.749474"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 1], ["ingredient_id", 12], ["index", 3], ["created_at", "2019-11-08 17:06:54.752449"], ["updated_at", "2019-11-08 17:06:54.752449"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 2], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 17:06:54.755378"], ["updated_at", "2019-11-08 17:06:54.755378"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 2], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 17:06:54.758376"], ["updated_at", "2019-11-08 17:06:54.758376"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 2], ["ingredient_id", 5], ["index", 3], ["created_at", "2019-11-08 17:06:54.761197"], ["updated_at", "2019-11-08 17:06:54.761197"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 2], ["ingredient_id", 12], ["index", 4], ["created_at", "2019-11-08 17:06:54.764228"], ["updated_at", "2019-11-08 17:06:54.764228"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 3], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 17:06:54.776246"], ["updated_at", "2019-11-08 17:06:54.776246"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 3], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 17:06:54.779216"], ["updated_at", "2019-11-08 17:06:54.779216"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 3], ["ingredient_id", 6], ["index", 3], ["created_at", "2019-11-08 17:06:54.782074"], ["updated_at", "2019-11-08 17:06:54.782074"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 3], ["ingredient_id", 7], ["index", 4], ["created_at", "2019-11-08 17:06:54.784964"], ["updated_at", "2019-11-08 17:06:54.784964"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 3], ["ingredient_id", 9], ["index", 5], ["created_at", "2019-11-08 17:06:54.787757"], ["updated_at", "2019-11-08 17:06:54.787757"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 3], ["ingredient_id", 12], ["index", 6], ["created_at", "2019-11-08 17:06:54.790434"], ["updated_at", "2019-11-08 17:06:54.790434"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 17:06:54.793618"], ["updated_at", "2019-11-08 17:06:54.793618"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 17:06:54.796648"], ["updated_at", "2019-11-08 17:06:54.796648"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 5], ["index", 3], ["created_at", "2019-11-08 17:06:54.799834"], ["updated_at", "2019-11-08 17:06:54.799834"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 9], ["index", 4], ["created_at", "2019-11-08 17:06:54.802824"], ["updated_at", "2019-11-08 17:06:54.802824"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 6], ["index", 5], ["created_at", "2019-11-08 17:06:54.805369"], ["updated_at", "2019-11-08 17:06:54.805369"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 7], ["index", 6], ["created_at", "2019-11-08 17:06:54.807917"], ["updated_at", "2019-11-08 17:06:54.807917"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 12], ["index", 7], ["created_at", "2019-11-08 17:06:54.810538"], ["updated_at", "2019-11-08 17:06:54.810538"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 5], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 17:06:54.813177"], ["updated_at", "2019-11-08 17:06:54.813177"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 5], ["ingredient_id", 3], ["index", 2], ["created_at", "2019-11-08 17:06:54.815703"], ["updated_at", "2019-11-08 17:06:54.815703"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 5], ["ingredient_id", 7], ["index", 3], ["created_at", "2019-11-08 17:06:54.818492"], ["updated_at", "2019-11-08 17:06:54.818492"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 5], ["ingredient_id", 9], ["index", 4], ["created_at", "2019-11-08 17:06:54.821193"], ["updated_at", "2019-11-08 17:06:54.821193"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 5], ["ingredient_id", 6], ["index", 5], ["created_at", "2019-11-08 17:06:54.823660"], ["updated_at", "2019-11-08 17:06:54.823660"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 5], ["ingredient_id", 12], ["index", 6], ["created_at", "2019-11-08 17:06:54.826435"], ["updated_at", "2019-11-08 17:06:54.826435"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 6], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 17:06:54.829016"], ["updated_at", "2019-11-08 17:06:54.829016"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 6], ["ingredient_id", 4], ["index", 2], ["created_at", "2019-11-08 17:06:54.831509"], ["updated_at", "2019-11-08 17:06:54.831509"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 6], ["ingredient_id", 7], ["index", 3], ["created_at", "2019-11-08 17:06:54.833922"], ["updated_at", "2019-11-08 17:06:54.833922"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 6], ["ingredient_id", 9], ["index", 4], ["created_at", "2019-11-08 17:06:54.836458"], ["updated_at", "2019-11-08 17:06:54.836458"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 6], ["ingredient_id", 6], ["index", 5], ["created_at", "2019-11-08 17:06:54.845630"], ["updated_at", "2019-11-08 17:06:54.845630"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 6], ["ingredient_id", 12], ["index", 6], ["created_at", "2019-11-08 17:06:54.848222"], ["updated_at", "2019-11-08 17:06:54.848222"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 17:06:54.850715"], ["updated_at", "2019-11-08 17:06:54.850715"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 17:06:54.853377"], ["updated_at", "2019-11-08 17:06:54.853377"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 6], ["index", 3], ["created_at", "2019-11-08 17:06:54.856046"], ["updated_at", "2019-11-08 17:06:54.856046"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 7], ["index", 4], ["created_at", "2019-11-08 17:06:54.858440"], ["updated_at", "2019-11-08 17:06:54.858440"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 8], ["index", 5], ["created_at", "2019-11-08 17:06:54.860906"], ["updated_at", "2019-11-08 17:06:54.860906"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 9], ["index", 6], ["created_at", "2019-11-08 17:06:54.863392"], ["updated_at", "2019-11-08 17:06:54.863392"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 12], ["index", 7], ["created_at", "2019-11-08 17:06:54.865777"], ["updated_at", "2019-11-08 17:06:54.865777"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 17:06:54.868509"], ["updated_at", "2019-11-08 17:06:54.868509"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 17:06:54.870785"], ["updated_at", "2019-11-08 17:06:54.870785"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 5], ["index", 3], ["created_at", "2019-11-08 17:06:54.872978"], ["updated_at", "2019-11-08 17:06:54.872978"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 8], ["index", 4], ["created_at", "2019-11-08 17:06:54.875252"], ["updated_at", "2019-11-08 17:06:54.875252"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 9], ["index", 5], ["created_at", "2019-11-08 17:06:54.877664"], ["updated_at", "2019-11-08 17:06:54.877664"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 6], ["index", 6], ["created_at", "2019-11-08 17:06:54.880735"], ["updated_at", "2019-11-08 17:06:54.880735"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 7], ["index", 7], ["created_at", "2019-11-08 17:06:54.883846"], ["updated_at", "2019-11-08 17:06:54.883846"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 12], ["index", 8], ["created_at", "2019-11-08 17:06:54.886482"], ["updated_at", "2019-11-08 17:06:54.886482"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 17:06:54.889129"], ["updated_at", "2019-11-08 17:06:54.889129"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 17:06:54.891865"], ["updated_at", "2019-11-08 17:06:54.891865"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 10], ["index", 3], ["created_at", "2019-11-08 17:06:54.894773"], ["updated_at", "2019-11-08 17:06:54.894773"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 6], ["index", 4], ["created_at", "2019-11-08 17:06:54.897610"], ["updated_at", "2019-11-08 17:06:54.897610"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 11], ["index", 5], ["created_at", "2019-11-08 17:06:54.900640"], ["updated_at", "2019-11-08 17:06:54.900640"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 7], ["index", 6], ["created_at", "2019-11-08 17:06:54.903354"], ["updated_at", "2019-11-08 17:06:54.903354"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 8], ["index", 7], ["created_at", "2019-11-08 17:06:54.911322"], ["updated_at", "2019-11-08 17:06:54.911322"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 9], ["index", 8], ["created_at", "2019-11-08 17:06:54.913768"], ["updated_at", "2019-11-08 17:06:54.913768"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 12], ["index", 9], ["created_at", "2019-11-08 17:06:54.916445"], ["updated_at", "2019-11-08 17:06:54.916445"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-08 17:06:54.919024"], ["updated_at", "2019-11-08 17:06:54.919024"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-08 17:06:54.921681"], ["updated_at", "2019-11-08 17:06:54.921681"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 5], ["index", 3], ["created_at", "2019-11-08 17:06:54.924304"], ["updated_at", "2019-11-08 17:06:54.924304"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 10], ["index", 4], ["created_at", "2019-11-08 17:06:54.927134"], ["updated_at", "2019-11-08 17:06:54.927134"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 6], ["index", 5], ["created_at", "2019-11-08 17:06:54.930134"], ["updated_at", "2019-11-08 17:06:54.930134"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 11], ["index", 6], ["created_at", "2019-11-08 17:06:54.933260"], ["updated_at", "2019-11-08 17:06:54.933260"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 7], ["index", 7], ["created_at", "2019-11-08 17:06:54.936128"], ["updated_at", "2019-11-08 17:06:54.936128"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 8], ["index", 8], ["created_at", "2019-11-08 17:06:54.938907"], ["updated_at", "2019-11-08 17:06:54.938907"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 9], ["index", 9], ["created_at", "2019-11-08 17:06:54.941259"], ["updated_at", "2019-11-08 17:06:54.941259"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 12], ["index", 10], ["created_at", "2019-11-08 17:06:54.943813"], ["updated_at", "2019-11-08 17:06:54.943813"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
