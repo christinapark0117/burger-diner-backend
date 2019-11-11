@@ -5756,3 +5756,1823 @@ Processing by IngredientsController#index as */*
 Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1981)
 
 
+Started GET "/ingredients" for ::1 at 2019-11-11 11:14:37 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IngredientsController#index as HTML
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 7142)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 11:14:48 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 40ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 16044)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 11:14:48 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 11:16:28 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5873)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 11:16:28 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 11:20:31 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.4ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 5873)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 11:20:31 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 11:20:37 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5873)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 11:20:37 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 11:25:01 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 5856)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 11:25:01 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 11:25:27 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 11:25:27 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 11:31:40 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.1ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5887)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 11:31:40 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1966)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 11:40:18 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 5887)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 11:40:18 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1966)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 11:47:08 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.1ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5887)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 11:47:08 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1966)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 11:47:23 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 11:47:23 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 11:47:38 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 11:47:38 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 11:47:50 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.4ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 37ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 5858)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 11:47:50 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 11:58:14 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5887)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 11:58:14 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1966)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 12:06:52 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.1ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 5887)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 12:06:52 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1966)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 12:24:43 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.1ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 5887)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 12:24:43 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1966)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 12:24:57 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 12:24:57 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 12:25:34 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 12:25:34 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 12:25:51 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 12:25:51 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 12:27:12 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.1ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 12:27:12 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1952)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 12:34:07 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5887)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 12:34:08 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1966)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 12:44:14 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 5887)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 12:44:14 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1966)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 12:50:20 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 36ms (Views: 0.4ms | ActiveRecord: 2.3ms | Allocations: 21186)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 12:50:20 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1981)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 12:59:15 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5899)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 12:59:15 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1966)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (2.7ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.4ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 7]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.4ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 7]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Destroy (0.3ms)[0m  [1m[31mDELETE FROM "ingredients" WHERE "ingredients"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBurger Load (0.5ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 13]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 14]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 16]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 17]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 18]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 19]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 20]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 21]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 22]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 23]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 24]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 25]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 26]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 27]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 28]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 29]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 30]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 31]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 32]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 33]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 34]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.4ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 35]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.4ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 36]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 37]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 38]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 39]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 40]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 41]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 42]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 43]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 44]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 45]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 46]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 47]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 48]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 49]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 50]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 51]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 52]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 53]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 54]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 55]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 56]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 57]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 58]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 59]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 60]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 61]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 62]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.3ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 63]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 64]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 65]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Destroy (0.2ms)[0m  [1m[31mDELETE FROM "burgers" WHERE "burgers"."id" = ?[0m  [["id", 66]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger"], ["created_at", "2019-11-11 18:54:47.003525"], ["updated_at", "2019-11-11 18:54:47.003525"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger"], ["created_at", "2019-11-11 18:54:47.006922"], ["updated_at", "2019-11-11 18:54:47.006922"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger Deluxe"], ["created_at", "2019-11-11 18:54:47.009937"], ["updated_at", "2019-11-11 18:54:47.009937"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger Deluxe"], ["created_at", "2019-11-11 18:54:47.012598"], ["updated_at", "2019-11-11 18:54:47.012598"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chicken Burger Deluxe"], ["created_at", "2019-11-11 18:54:47.015503"], ["updated_at", "2019-11-11 18:54:47.015503"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Spicy Chicken Burger Deluxe"], ["created_at", "2019-11-11 18:54:47.018502"], ["updated_at", "2019-11-11 18:54:47.018502"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger Deluxe with Bacon"], ["created_at", "2019-11-11 18:54:47.021363"], ["updated_at", "2019-11-11 18:54:47.021363"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger Deluxe with Bacon"], ["created_at", "2019-11-11 18:54:47.024084"], ["updated_at", "2019-11-11 18:54:47.024084"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ultimate Hamburger Deluxe"], ["created_at", "2019-11-11 18:54:47.027285"], ["updated_at", "2019-11-11 18:54:47.027285"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ultimate Cheeseburger Deluxe"], ["created_at", "2019-11-11 18:54:47.041171"], ["updated_at", "2019-11-11 18:54:47.041171"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bottom Bun"], ["image_url", "https://ucd9cf22c4820da4b39f40e88017.previews.dropboxusercontent.com/p/orig/AAnLn1uxGVqi6TGKG_GsF-miHmkUR0Ndy5jBvOqeiORnpPVgPbECDDfV05bJqVAsnCteeGHlTJVqZjX-VjPvpzrsrTb5WJih17hxomP1i9wnrn1sffjMLOC1nG9pBZjiO3CvCA4plbyAfAuTWlCLSdlgGEkZsvJGtOIU522HTZsUpJjHZGaA2Cg23R_0nYdeM21wNbuf0Cwk1K6mbsYwOPgwCDb1o8FA5HGIwmvYihc1D_g8bspxlo0LCUqIntE-UE0hA-_YFho1F9klDlGauWArIcZFSP-32u0_IYsdyeztoonSkNgAB8WlKx93BnpHUAq7JH_M1Ey8ucZcC1m59HBKMrYVGJpA8Y5VnT9mh2JsB9N_NUOli6jj0-NT6xjf5gNymYaJpe_XVR46Bo5ERVzc/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 18:54:47.046763"], ["updated_at", "2019-11-11 18:54:47.046763"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Beef Patty"], ["image_url", "https://previews.dropbox.com/p/orig/AAnu8bY3xi-yeaaQHtg7zY7cm5DCwXlGyerX19JEIMN2NSnHlxPjKscatYg8zZ4ZhCcrs1Fvb1HCO-VH5tzX2uLINQJx5t_Y7ktjBSacChHFMjcaNwB06VgzzSc91U9wlrnrgNh2ygXM96AZZ32TBmAGLiYyUi2gi2XUOJczV1BBomT49M_c2QDb62OiL8SdWJudthp_g-CYQMsY-dFJQsCRWT_qpBrqMHrI6Zgk5jisycXQVB1iRd-OaRq6QXi9sbHwaJrOGBqjeanlTlDcLgT5am4ujFToESLDyl57w4ttE7ANeHu2tm7ZpAjKkRKXn3U/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 18:54:47.051563"], ["updated_at", "2019-11-11 18:54:47.051563"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Chicken Patty"], ["image_url", "https://previews.dropbox.com/p/orig/AAlPynMcdFuVhiGsieBADpyAU3i6efmel7akQnUl-0MJ8siut0QFB0bNf6CYXfPOK7dXf_nW8z23S8lfoIYiikN5mmy5J3eJMjYfgBC5nBChnAAjIsTb5wqYLzl0724PUe0sQ78Mm45PrIxpieLm1y6nZIWLLw-RMofyN1dH1ip-aQ9wvOKJpGVS7hOfDzIshrjLRJ2csHvsqP5rDrKJo_dqbrX49nvLsdD7mAX_SSsR_rCj4mzqtg8qhZpWm1vhsm7PqnUDQ8GIp_EosSaaYBh7l5giOfAEogAzKlhChtXFjMzpiFT2btqmtNVMUkXLrLSn0uwmrjmK2LnQX1wH5rMg/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 18:54:47.056081"], ["updated_at", "2019-11-11 18:54:47.056081"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Spicy Chicken Patty"], ["image_url", "https://previews.dropbox.com/p/orig/AAnZfaChUbq81__GzK-8Ry8sN79LSoDhshEhCIX5tePeHp_jp3IU8GVT2bT6B_lUkB1r8RwFzmnsra_fL0-sczcx1EjEe9eVmX1skSiEuL0am_Z2YEY9g_6jAxAQMIBKqRjydcTWRYQEuxCcFvn13inVve7bCrFdXKh65o_CoiIRaPSq94aBrjnhTbbxQCOeChoBMkPz3YsNxy4vhdajbmJpipee1gl9JIzC_S0tqcZAlNmiADOc1AN-EpPNiFSf-9sSuL8ATTtKWHEbFwYGdBhEeZ5WZ_S1Y5GUTUjqVF_-M5oUPxApVmnhze4RYcY7WzLJOtBcNVZgk9yYBXkNBaEI/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 18:54:47.060003"], ["updated_at", "2019-11-11 18:54:47.060003"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Cheese"], ["image_url", "https://previews.dropbox.com/p/orig/AAkJb0NYSWhsj6sYav9oczjQIQ5kWT_LRI3GDLj0VvgwyS86YMlB_nS8F-5tjWXWaq_gcdN3aTWFefVbadYTQfJWrkCGVH2QrnBlwptWngbotaS8TRlg1A308RsoY3PK0Ra9oNAlXS6mKlUDkEm36CjKOZmqyJUGGHAMKC1joZlQRfflG1_O_39ca0Wl90QOopLXX6NT5Xgfl1IfQWtJ1xWWGDY_xPVokdD01fUF9qFuVbPxHzboNotVzd3RiHi5k7ebVmhDv6nyRE72digI793MjkZjGK1ZznQ1La2CszOLMQOVP9zgpk7BzwhPMSNYkkV1rervGbswK_LKiauZJiDb/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 18:54:47.063464"], ["updated_at", "2019-11-11 18:54:47.063464"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tomatoes"], ["image_url", "https://previews.dropbox.com/p/orig/AAmFcbn7wqe8dbDgeLdD5HjJ2CG-FrPytHnCiPqf-AgfpqxbdSA1eX_ywL1Q51RGpHsLeBL6u-9xtvPRCfmV5d62Zxh4fHNKPV4noQGXWCoUDLma6LXiS8uNqozHv8vu3jY-O_hFoyrpWQjvLvvNonjp_j_ggwzZDu8KrU00K2KfmUIpuUYQtDRYrIGdvmc7ik9_tpHFrvXzq6S35CwE5AsP3ivrpT1tQ3uES047mfwtwdFQ3q73sayUamaKU1nUbM4MScuXk4swJOsFNjqYP4CB3Tr0L8o7TMMg_HnbWLPIG1q5wJCtUjmCkBlXcX6J1EI/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 18:54:47.066789"], ["updated_at", "2019-11-11 18:54:47.066789"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lettuce"], ["image_url", "https://previews.dropbox.com/p/orig/AAlkv2W8e-gJnN9mtIi3VFSsbBvothDuNOpQEWl4AToTSVifSqMD0XV8-QFWQ0Sbv86AQBhIO8AP_G8DlKg02BA_Dtt5Sw5g4uWOEWjJjg2LtoEZLjIYY8plCjhq1IQPH1yW7fRrX95PpV2Ak-fMGnI1QWgRgRGDISfljmzK-y9GBLnxO7SKFrxf0UP-zgwZZQAItq6XZi9w5p1IkBGLAqDOj8p9XNt8MGZe6MO6wSk2Xc5aHa_bOnTy4Tp0n-IJHGtaatBGnHd_IhWp08pJRD4K-U7L8kbr_KwAk7Sw1iP04XGrIe3Dd2YoPqAtSsqA99_jnE5IRG9cHntwzrbaNXZc/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 18:54:47.069977"], ["updated_at", "2019-11-11 18:54:47.069977"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bacon"], ["image_url", "burger-diner-backend/app/images/bacon-strips.svg"], ["created_at", "2019-11-11 18:54:47.073595"], ["updated_at", "2019-11-11 18:54:47.073595"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Onion"], ["image_url", "https://previews.dropbox.com/p/orig/AAkYv59WORmpuOb7yBzKl43IVaRRVCDXJWPDvotHZJRs2mj6CP8tfrdc8vXP_fVvd3M3IWNue3Hxc0grW70EDOAMBo1l2nWFTMhuVyli2tq9_-25QWlYAdLGOvvtVWmOWGQ-XSpGFJGwL4qsr-Ui3mCMZWgSDf_vBFIVaZYXYo03EMzYoaXhz4d2cLukvL2FRJAYqWAl0FyvK_iNTEFdoSACclWd1yamjj1A4gJ43Sp8zwv5IIXRL2T5eSd1Sx1K_4aSl-2uzOlgLlcraSH3QWQWxFuH6c2UNTtqyY7XVuISZBlFBGLRszpEeLzzThVLI1oWb2Xh_U4ab0ioAW9ctU_t/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 18:54:47.076660"], ["updated_at", "2019-11-11 18:54:47.076660"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carmelized Mushroom"], ["image_url", "https://previews.dropbox.com/p/orig/AAnPxrYGps04fpVp0gvPpYPi7T7U98T4_PLqAODSIhzCXezZuVou7J-Xg32GrZiT80lK56ctvCKmDhZulV_uLfcGk9fvDsz2oKo_CrcIRVjkm4tc9Q_QU8xa9Pniy2EZEgCYX7PnkRTg7lPYzJoftlDIIvZ4a89E6laRgbFsIfXBHWAl4k3mpRW6ZGfJQ4KGBd2r4WJ_UvUpFQw2zG1ZoMp8D2Sjg4e-iyeIinddjgl8Ilei6uREba6NZ4zYxwDafc6oqB2gBiMJ8ITART3aMI1WeJHL0AIrDnQz4XR3kA_Q1M-UWG0oqKQ7RWyEQyUBMce91Ubk-yLe1SFamEZ9B6fy/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 18:54:47.079343"], ["updated_at", "2019-11-11 18:54:47.079343"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carmelized Onion"], ["image_url", "https://previews.dropbox.com/p/orig/AAlQ3XmfoisPUvChELsFmIepLKaq73HORFacDVsoATdTJ3zjhzgr_M6P095ZrIIlHgKP1dGAmn60sSuYlptvR-hOqDwn7PNsh9nCpHtUt-XQyOBw0T5CKtfunrTFi8_PwZ4mxR85qvnaVbzMj8f1QMSh-icVxKINZipFt5pOLO2x51ARnUM4sR9n88LsHhRu0yFW81XwoGga7R43dyLdPYkWdH4I2uwALgz5QJA90HFyPZaAs-zSEbd7RqUs-3ycRfWENVioez5CFch2SW0pdIVInGU2C13eLb-BBDXbR_hLLwEsIhhURWFKuTRycEAo68jn67kD1v2baox_QhMp4mlA/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 18:54:47.082447"], ["updated_at", "2019-11-11 18:54:47.082447"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Top Bun"], ["image_url", "https://previews.dropbox.com/p/orig/AAmVj9_QbqTUL_rksGpbaPOb-BOwIRzvslwnA20fI9KZKbNlMxmxD60tEk2lrqMm9QMSJ63bipoUSjpJOWqzokEHVBCf1jPNysiLbEekTP9usEDFVUsDtpD-yJHwxJfZFC4m9aED2ZNBWOTcFQqgHSdAwqDaxGE-QRrjQBTkk7BQE-Ep6U1tA6Bj3K-Gj9M1t01eSoboqeVbdZT8jnKAGCfYj4i05Bw7BnMv52VpMjEo0blr8IMX6rdCBrAVRXBETs_UJfFc3A_6CT5mm6AryZyDz4p7JhjOsXP1SfdlwKs-M9VTXt9xb_2dWGS86EA9f4PU7Tlz1aHDtaRxR-KGdedo/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 18:54:47.085668"], ["updated_at", "2019-11-11 18:54:47.085668"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 11], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-11 18:54:47.092501"], ["updated_at", "2019-11-11 18:54:47.092501"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 11], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-11 18:54:47.096605"], ["updated_at", "2019-11-11 18:54:47.096605"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 11], ["ingredient_id", 24], ["index", 3], ["created_at", "2019-11-11 18:54:47.099807"], ["updated_at", "2019-11-11 18:54:47.099807"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 12], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-11 18:54:47.102802"], ["updated_at", "2019-11-11 18:54:47.102802"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 12], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-11 18:54:47.105856"], ["updated_at", "2019-11-11 18:54:47.105856"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 12], ["ingredient_id", 17], ["index", 3], ["created_at", "2019-11-11 18:54:47.108891"], ["updated_at", "2019-11-11 18:54:47.108891"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 12], ["ingredient_id", 24], ["index", 4], ["created_at", "2019-11-11 18:54:47.111767"], ["updated_at", "2019-11-11 18:54:47.111767"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 13], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-11 18:54:47.114519"], ["updated_at", "2019-11-11 18:54:47.114519"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 13], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-11 18:54:47.117211"], ["updated_at", "2019-11-11 18:54:47.117211"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 13], ["ingredient_id", 18], ["index", 3], ["created_at", "2019-11-11 18:54:47.120306"], ["updated_at", "2019-11-11 18:54:47.120306"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 13], ["ingredient_id", 19], ["index", 4], ["created_at", "2019-11-11 18:54:47.123168"], ["updated_at", "2019-11-11 18:54:47.123168"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 13], ["ingredient_id", 21], ["index", 5], ["created_at", "2019-11-11 18:54:47.126346"], ["updated_at", "2019-11-11 18:54:47.126346"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 13], ["ingredient_id", 24], ["index", 6], ["created_at", "2019-11-11 18:54:47.130018"], ["updated_at", "2019-11-11 18:54:47.130018"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-11 18:54:47.141465"], ["updated_at", "2019-11-11 18:54:47.141465"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-11 18:54:47.145167"], ["updated_at", "2019-11-11 18:54:47.145167"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 17], ["index", 3], ["created_at", "2019-11-11 18:54:47.148917"], ["updated_at", "2019-11-11 18:54:47.148917"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 21], ["index", 4], ["created_at", "2019-11-11 18:54:47.152411"], ["updated_at", "2019-11-11 18:54:47.152411"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 18], ["index", 5], ["created_at", "2019-11-11 18:54:47.155673"], ["updated_at", "2019-11-11 18:54:47.155673"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 19], ["index", 6], ["created_at", "2019-11-11 18:54:47.158580"], ["updated_at", "2019-11-11 18:54:47.158580"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 14], ["ingredient_id", 24], ["index", 7], ["created_at", "2019-11-11 18:54:47.161432"], ["updated_at", "2019-11-11 18:54:47.161432"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 15], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-11 18:54:47.164628"], ["updated_at", "2019-11-11 18:54:47.164628"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 15], ["ingredient_id", 15], ["index", 2], ["created_at", "2019-11-11 18:54:47.168016"], ["updated_at", "2019-11-11 18:54:47.168016"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 15], ["ingredient_id", 19], ["index", 3], ["created_at", "2019-11-11 18:54:47.171476"], ["updated_at", "2019-11-11 18:54:47.171476"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 15], ["ingredient_id", 21], ["index", 4], ["created_at", "2019-11-11 18:54:47.174536"], ["updated_at", "2019-11-11 18:54:47.174536"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 15], ["ingredient_id", 18], ["index", 5], ["created_at", "2019-11-11 18:54:47.177749"], ["updated_at", "2019-11-11 18:54:47.177749"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 15], ["ingredient_id", 24], ["index", 6], ["created_at", "2019-11-11 18:54:47.181099"], ["updated_at", "2019-11-11 18:54:47.181099"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 16], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-11 18:54:47.184389"], ["updated_at", "2019-11-11 18:54:47.184389"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 16], ["ingredient_id", 16], ["index", 2], ["created_at", "2019-11-11 18:54:47.187600"], ["updated_at", "2019-11-11 18:54:47.187600"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 16], ["ingredient_id", 19], ["index", 3], ["created_at", "2019-11-11 18:54:47.190552"], ["updated_at", "2019-11-11 18:54:47.190552"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 16], ["ingredient_id", 21], ["index", 4], ["created_at", "2019-11-11 18:54:47.194100"], ["updated_at", "2019-11-11 18:54:47.194100"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 16], ["ingredient_id", 18], ["index", 5], ["created_at", "2019-11-11 18:54:47.197155"], ["updated_at", "2019-11-11 18:54:47.197155"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 16], ["ingredient_id", 24], ["index", 6], ["created_at", "2019-11-11 18:54:47.199982"], ["updated_at", "2019-11-11 18:54:47.199982"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-11 18:54:47.203961"], ["updated_at", "2019-11-11 18:54:47.203961"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-11 18:54:47.208284"], ["updated_at", "2019-11-11 18:54:47.208284"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 18], ["index", 3], ["created_at", "2019-11-11 18:54:47.213423"], ["updated_at", "2019-11-11 18:54:47.213423"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 19], ["index", 4], ["created_at", "2019-11-11 18:54:47.217856"], ["updated_at", "2019-11-11 18:54:47.217856"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 20], ["index", 5], ["created_at", "2019-11-11 18:54:47.221696"], ["updated_at", "2019-11-11 18:54:47.221696"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 21], ["index", 6], ["created_at", "2019-11-11 18:54:47.225774"], ["updated_at", "2019-11-11 18:54:47.225774"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 17], ["ingredient_id", 24], ["index", 7], ["created_at", "2019-11-11 18:54:47.229615"], ["updated_at", "2019-11-11 18:54:47.229615"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-11 18:54:47.233694"], ["updated_at", "2019-11-11 18:54:47.233694"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-11 18:54:47.245763"], ["updated_at", "2019-11-11 18:54:47.245763"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 17], ["index", 3], ["created_at", "2019-11-11 18:54:47.249142"], ["updated_at", "2019-11-11 18:54:47.249142"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 20], ["index", 4], ["created_at", "2019-11-11 18:54:47.252504"], ["updated_at", "2019-11-11 18:54:47.252504"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 21], ["index", 5], ["created_at", "2019-11-11 18:54:47.255710"], ["updated_at", "2019-11-11 18:54:47.255710"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 18], ["index", 6], ["created_at", "2019-11-11 18:54:47.259337"], ["updated_at", "2019-11-11 18:54:47.259337"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 19], ["index", 7], ["created_at", "2019-11-11 18:54:47.263111"], ["updated_at", "2019-11-11 18:54:47.263111"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 18], ["ingredient_id", 24], ["index", 8], ["created_at", "2019-11-11 18:54:47.266735"], ["updated_at", "2019-11-11 18:54:47.266735"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-11 18:54:47.270098"], ["updated_at", "2019-11-11 18:54:47.270098"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-11 18:54:47.273551"], ["updated_at", "2019-11-11 18:54:47.273551"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 22], ["index", 3], ["created_at", "2019-11-11 18:54:47.276770"], ["updated_at", "2019-11-11 18:54:47.276770"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 18], ["index", 4], ["created_at", "2019-11-11 18:54:47.280303"], ["updated_at", "2019-11-11 18:54:47.280303"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 23], ["index", 5], ["created_at", "2019-11-11 18:54:47.283249"], ["updated_at", "2019-11-11 18:54:47.283249"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 19], ["index", 6], ["created_at", "2019-11-11 18:54:47.286527"], ["updated_at", "2019-11-11 18:54:47.286527"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 20], ["index", 7], ["created_at", "2019-11-11 18:54:47.289856"], ["updated_at", "2019-11-11 18:54:47.289856"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 21], ["index", 8], ["created_at", "2019-11-11 18:54:47.293039"], ["updated_at", "2019-11-11 18:54:47.293039"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 19], ["ingredient_id", 24], ["index", 9], ["created_at", "2019-11-11 18:54:47.295846"], ["updated_at", "2019-11-11 18:54:47.295846"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 13], ["index", 1], ["created_at", "2019-11-11 18:54:47.298608"], ["updated_at", "2019-11-11 18:54:47.298608"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 14], ["index", 2], ["created_at", "2019-11-11 18:54:47.302654"], ["updated_at", "2019-11-11 18:54:47.302654"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 17], ["index", 3], ["created_at", "2019-11-11 18:54:47.306437"], ["updated_at", "2019-11-11 18:54:47.306437"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 22], ["index", 4], ["created_at", "2019-11-11 18:54:47.309799"], ["updated_at", "2019-11-11 18:54:47.309799"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 18], ["index", 5], ["created_at", "2019-11-11 18:54:47.312784"], ["updated_at", "2019-11-11 18:54:47.312784"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.5ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 23], ["index", 6], ["created_at", "2019-11-11 18:54:47.317578"], ["updated_at", "2019-11-11 18:54:47.317578"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.5ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 19], ["index", 7], ["created_at", "2019-11-11 18:54:47.324143"], ["updated_at", "2019-11-11 18:54:47.324143"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 20], ["index", 8], ["created_at", "2019-11-11 18:54:47.330672"], ["updated_at", "2019-11-11 18:54:47.330672"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 21], ["index", 9], ["created_at", "2019-11-11 18:54:47.336521"], ["updated_at", "2019-11-11 18:54:47.336521"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 20], ["ingredient_id", 24], ["index", 10], ["created_at", "2019-11-11 18:54:47.342129"], ["updated_at", "2019-11-11 18:54:47.342129"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 13:55:56 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.1ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2278)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRecipes (20191108151037)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191108151037"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateIngredients (20191108151055)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image_url" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191108151055"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBurgers (20191108151131)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "burgers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "recipe_id" integer, "ingredient_id" integer, "index" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191108151131"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsers (20191108205251)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191108205251"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-11-11 19:00:32.168806"], ["updated_at", "2019-11-11 19:00:32.168806"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger"], ["created_at", "2019-11-11 19:00:37.003203"], ["updated_at", "2019-11-11 19:00:37.003203"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger"], ["created_at", "2019-11-11 19:00:37.006833"], ["updated_at", "2019-11-11 19:00:37.006833"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger Deluxe"], ["created_at", "2019-11-11 19:00:37.010338"], ["updated_at", "2019-11-11 19:00:37.010338"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger Deluxe"], ["created_at", "2019-11-11 19:00:37.013557"], ["updated_at", "2019-11-11 19:00:37.013557"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chicken Burger Deluxe"], ["created_at", "2019-11-11 19:00:37.017531"], ["updated_at", "2019-11-11 19:00:37.017531"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Spicy Chicken Burger Deluxe"], ["created_at", "2019-11-11 19:00:37.021089"], ["updated_at", "2019-11-11 19:00:37.021089"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hamburger Deluxe with Bacon"], ["created_at", "2019-11-11 19:00:37.025090"], ["updated_at", "2019-11-11 19:00:37.025090"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheeseburger Deluxe with Bacon"], ["created_at", "2019-11-11 19:00:37.029037"], ["updated_at", "2019-11-11 19:00:37.029037"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ultimate Hamburger Deluxe"], ["created_at", "2019-11-11 19:00:37.032423"], ["updated_at", "2019-11-11 19:00:37.032423"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ultimate Cheeseburger Deluxe"], ["created_at", "2019-11-11 19:00:37.053609"], ["updated_at", "2019-11-11 19:00:37.053609"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bottom Bun"], ["image_url", "https://ucd9cf22c4820da4b39f40e88017.previews.dropboxusercontent.com/p/orig/AAnLn1uxGVqi6TGKG_GsF-miHmkUR0Ndy5jBvOqeiORnpPVgPbECDDfV05bJqVAsnCteeGHlTJVqZjX-VjPvpzrsrTb5WJih17hxomP1i9wnrn1sffjMLOC1nG9pBZjiO3CvCA4plbyAfAuTWlCLSdlgGEkZsvJGtOIU522HTZsUpJjHZGaA2Cg23R_0nYdeM21wNbuf0Cwk1K6mbsYwOPgwCDb1o8FA5HGIwmvYihc1D_g8bspxlo0LCUqIntE-UE0hA-_YFho1F9klDlGauWArIcZFSP-32u0_IYsdyeztoonSkNgAB8WlKx93BnpHUAq7JH_M1Ey8ucZcC1m59HBKMrYVGJpA8Y5VnT9mh2JsB9N_NUOli6jj0-NT6xjf5gNymYaJpe_XVR46Bo5ERVzc/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 19:00:37.061782"], ["updated_at", "2019-11-11 19:00:37.061782"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Beef Patty"], ["image_url", "https://previews.dropbox.com/p/orig/AAnu8bY3xi-yeaaQHtg7zY7cm5DCwXlGyerX19JEIMN2NSnHlxPjKscatYg8zZ4ZhCcrs1Fvb1HCO-VH5tzX2uLINQJx5t_Y7ktjBSacChHFMjcaNwB06VgzzSc91U9wlrnrgNh2ygXM96AZZ32TBmAGLiYyUi2gi2XUOJczV1BBomT49M_c2QDb62OiL8SdWJudthp_g-CYQMsY-dFJQsCRWT_qpBrqMHrI6Zgk5jisycXQVB1iRd-OaRq6QXi9sbHwaJrOGBqjeanlTlDcLgT5am4ujFToESLDyl57w4ttE7ANeHu2tm7ZpAjKkRKXn3U/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 19:00:37.064666"], ["updated_at", "2019-11-11 19:00:37.064666"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Chicken Patty"], ["image_url", "https://previews.dropbox.com/p/orig/AAlPynMcdFuVhiGsieBADpyAU3i6efmel7akQnUl-0MJ8siut0QFB0bNf6CYXfPOK7dXf_nW8z23S8lfoIYiikN5mmy5J3eJMjYfgBC5nBChnAAjIsTb5wqYLzl0724PUe0sQ78Mm45PrIxpieLm1y6nZIWLLw-RMofyN1dH1ip-aQ9wvOKJpGVS7hOfDzIshrjLRJ2csHvsqP5rDrKJo_dqbrX49nvLsdD7mAX_SSsR_rCj4mzqtg8qhZpWm1vhsm7PqnUDQ8GIp_EosSaaYBh7l5giOfAEogAzKlhChtXFjMzpiFT2btqmtNVMUkXLrLSn0uwmrjmK2LnQX1wH5rMg/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 19:00:37.067857"], ["updated_at", "2019-11-11 19:00:37.067857"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Spicy Chicken Patty"], ["image_url", "https://previews.dropbox.com/p/orig/AAnZfaChUbq81__GzK-8Ry8sN79LSoDhshEhCIX5tePeHp_jp3IU8GVT2bT6B_lUkB1r8RwFzmnsra_fL0-sczcx1EjEe9eVmX1skSiEuL0am_Z2YEY9g_6jAxAQMIBKqRjydcTWRYQEuxCcFvn13inVve7bCrFdXKh65o_CoiIRaPSq94aBrjnhTbbxQCOeChoBMkPz3YsNxy4vhdajbmJpipee1gl9JIzC_S0tqcZAlNmiADOc1AN-EpPNiFSf-9sSuL8ATTtKWHEbFwYGdBhEeZ5WZ_S1Y5GUTUjqVF_-M5oUPxApVmnhze4RYcY7WzLJOtBcNVZgk9yYBXkNBaEI/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 19:00:37.071269"], ["updated_at", "2019-11-11 19:00:37.071269"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Cheese"], ["image_url", "https://previews.dropbox.com/p/orig/AAkJb0NYSWhsj6sYav9oczjQIQ5kWT_LRI3GDLj0VvgwyS86YMlB_nS8F-5tjWXWaq_gcdN3aTWFefVbadYTQfJWrkCGVH2QrnBlwptWngbotaS8TRlg1A308RsoY3PK0Ra9oNAlXS6mKlUDkEm36CjKOZmqyJUGGHAMKC1joZlQRfflG1_O_39ca0Wl90QOopLXX6NT5Xgfl1IfQWtJ1xWWGDY_xPVokdD01fUF9qFuVbPxHzboNotVzd3RiHi5k7ebVmhDv6nyRE72digI793MjkZjGK1ZznQ1La2CszOLMQOVP9zgpk7BzwhPMSNYkkV1rervGbswK_LKiauZJiDb/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 19:00:37.074595"], ["updated_at", "2019-11-11 19:00:37.074595"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tomatoes"], ["image_url", "https://previews.dropbox.com/p/orig/AAmFcbn7wqe8dbDgeLdD5HjJ2CG-FrPytHnCiPqf-AgfpqxbdSA1eX_ywL1Q51RGpHsLeBL6u-9xtvPRCfmV5d62Zxh4fHNKPV4noQGXWCoUDLma6LXiS8uNqozHv8vu3jY-O_hFoyrpWQjvLvvNonjp_j_ggwzZDu8KrU00K2KfmUIpuUYQtDRYrIGdvmc7ik9_tpHFrvXzq6S35CwE5AsP3ivrpT1tQ3uES047mfwtwdFQ3q73sayUamaKU1nUbM4MScuXk4swJOsFNjqYP4CB3Tr0L8o7TMMg_HnbWLPIG1q5wJCtUjmCkBlXcX6J1EI/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 19:00:37.078253"], ["updated_at", "2019-11-11 19:00:37.078253"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lettuce"], ["image_url", "https://previews.dropbox.com/p/orig/AAlkv2W8e-gJnN9mtIi3VFSsbBvothDuNOpQEWl4AToTSVifSqMD0XV8-QFWQ0Sbv86AQBhIO8AP_G8DlKg02BA_Dtt5Sw5g4uWOEWjJjg2LtoEZLjIYY8plCjhq1IQPH1yW7fRrX95PpV2Ak-fMGnI1QWgRgRGDISfljmzK-y9GBLnxO7SKFrxf0UP-zgwZZQAItq6XZi9w5p1IkBGLAqDOj8p9XNt8MGZe6MO6wSk2Xc5aHa_bOnTy4Tp0n-IJHGtaatBGnHd_IhWp08pJRD4K-U7L8kbr_KwAk7Sw1iP04XGrIe3Dd2YoPqAtSsqA99_jnE5IRG9cHntwzrbaNXZc/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 19:00:37.081403"], ["updated_at", "2019-11-11 19:00:37.081403"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bacon"], ["image_url", "https://previews.dropbox.com/p/orig/AAl14VrE7X8Jksd4k_fQTB8vkLDMJ9djOl9PrBwjJ7KqDcwOKN4KSTTU_yS6rOBoikkXOVFIk-S8BzX4o0Wfq2rrVtJSEFfo0dlVRxRn1mDlSrhoBDGU03zeMIdJ5KGepbZ2ZngDt_EPIp7L4BXmGhYLitgjoIoFCymkLZ9VgsvHcA5boez95F1HhT480DguaM_kj0WWPOUZzUMHDaGcKPkNZR4YRRRR30OsSuitEscwxqyo2fBF8guLQYgcDUJvRzJC2rJkNi5YQ88b9gwnSFrOaOO9SI9FSNcQ4odR_PTUfOMv0FTwc4DS9e0ZN0KEY8fEEhZ0lhMxhvMxUFvGbDKW/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 19:00:37.084346"], ["updated_at", "2019-11-11 19:00:37.084346"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Onion"], ["image_url", "https://previews.dropbox.com/p/orig/AAkYv59WORmpuOb7yBzKl43IVaRRVCDXJWPDvotHZJRs2mj6CP8tfrdc8vXP_fVvd3M3IWNue3Hxc0grW70EDOAMBo1l2nWFTMhuVyli2tq9_-25QWlYAdLGOvvtVWmOWGQ-XSpGFJGwL4qsr-Ui3mCMZWgSDf_vBFIVaZYXYo03EMzYoaXhz4d2cLukvL2FRJAYqWAl0FyvK_iNTEFdoSACclWd1yamjj1A4gJ43Sp8zwv5IIXRL2T5eSd1Sx1K_4aSl-2uzOlgLlcraSH3QWQWxFuH6c2UNTtqyY7XVuISZBlFBGLRszpEeLzzThVLI1oWb2Xh_U4ab0ioAW9ctU_t/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 19:00:37.087256"], ["updated_at", "2019-11-11 19:00:37.087256"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carmelized Mushroom"], ["image_url", "https://previews.dropbox.com/p/orig/AAnPxrYGps04fpVp0gvPpYPi7T7U98T4_PLqAODSIhzCXezZuVou7J-Xg32GrZiT80lK56ctvCKmDhZulV_uLfcGk9fvDsz2oKo_CrcIRVjkm4tc9Q_QU8xa9Pniy2EZEgCYX7PnkRTg7lPYzJoftlDIIvZ4a89E6laRgbFsIfXBHWAl4k3mpRW6ZGfJQ4KGBd2r4WJ_UvUpFQw2zG1ZoMp8D2Sjg4e-iyeIinddjgl8Ilei6uREba6NZ4zYxwDafc6oqB2gBiMJ8ITART3aMI1WeJHL0AIrDnQz4XR3kA_Q1M-UWG0oqKQ7RWyEQyUBMce91Ubk-yLe1SFamEZ9B6fy/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 19:00:37.090642"], ["updated_at", "2019-11-11 19:00:37.090642"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carmelized Onion"], ["image_url", "https://previews.dropbox.com/p/orig/AAlQ3XmfoisPUvChELsFmIepLKaq73HORFacDVsoATdTJ3zjhzgr_M6P095ZrIIlHgKP1dGAmn60sSuYlptvR-hOqDwn7PNsh9nCpHtUt-XQyOBw0T5CKtfunrTFi8_PwZ4mxR85qvnaVbzMj8f1QMSh-icVxKINZipFt5pOLO2x51ARnUM4sR9n88LsHhRu0yFW81XwoGga7R43dyLdPYkWdH4I2uwALgz5QJA90HFyPZaAs-zSEbd7RqUs-3ycRfWENVioez5CFch2SW0pdIVInGU2C13eLb-BBDXbR_hLLwEsIhhURWFKuTRycEAo68jn67kD1v2baox_QhMp4mlA/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 19:00:37.094169"], ["updated_at", "2019-11-11 19:00:37.094169"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Top Bun"], ["image_url", "https://previews.dropbox.com/p/orig/AAmVj9_QbqTUL_rksGpbaPOb-BOwIRzvslwnA20fI9KZKbNlMxmxD60tEk2lrqMm9QMSJ63bipoUSjpJOWqzokEHVBCf1jPNysiLbEekTP9usEDFVUsDtpD-yJHwxJfZFC4m9aED2ZNBWOTcFQqgHSdAwqDaxGE-QRrjQBTkk7BQE-Ep6U1tA6Bj3K-Gj9M1t01eSoboqeVbdZT8jnKAGCfYj4i05Bw7BnMv52VpMjEo0blr8IMX6rdCBrAVRXBETs_UJfFc3A_6CT5mm6AryZyDz4p7JhjOsXP1SfdlwKs-M9VTXt9xb_2dWGS86EA9f4PU7Tlz1aHDtaRxR-KGdedo/p.svg?fv_content=true&size_mode=5"], ["created_at", "2019-11-11 19:00:37.097320"], ["updated_at", "2019-11-11 19:00:37.097320"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 1], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-11 19:00:37.109116"], ["updated_at", "2019-11-11 19:00:37.109116"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 1], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-11 19:00:37.123734"], ["updated_at", "2019-11-11 19:00:37.123734"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 1], ["ingredient_id", 12], ["index", 3], ["created_at", "2019-11-11 19:00:37.127612"], ["updated_at", "2019-11-11 19:00:37.127612"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 2], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-11 19:00:37.131853"], ["updated_at", "2019-11-11 19:00:37.131853"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 2], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-11 19:00:37.135916"], ["updated_at", "2019-11-11 19:00:37.135916"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 2], ["ingredient_id", 5], ["index", 3], ["created_at", "2019-11-11 19:00:37.139461"], ["updated_at", "2019-11-11 19:00:37.139461"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 2], ["ingredient_id", 12], ["index", 4], ["created_at", "2019-11-11 19:00:37.143300"], ["updated_at", "2019-11-11 19:00:37.143300"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.5ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 3], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-11 19:00:37.148438"], ["updated_at", "2019-11-11 19:00:37.148438"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 3], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-11 19:00:37.154712"], ["updated_at", "2019-11-11 19:00:37.154712"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 3], ["ingredient_id", 6], ["index", 3], ["created_at", "2019-11-11 19:00:37.160406"], ["updated_at", "2019-11-11 19:00:37.160406"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 3], ["ingredient_id", 7], ["index", 4], ["created_at", "2019-11-11 19:00:37.165606"], ["updated_at", "2019-11-11 19:00:37.165606"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 3], ["ingredient_id", 9], ["index", 5], ["created_at", "2019-11-11 19:00:37.170850"], ["updated_at", "2019-11-11 19:00:37.170850"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 3], ["ingredient_id", 12], ["index", 6], ["created_at", "2019-11-11 19:00:37.175437"], ["updated_at", "2019-11-11 19:00:37.175437"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-11 19:00:37.180110"], ["updated_at", "2019-11-11 19:00:37.180110"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-11 19:00:37.184545"], ["updated_at", "2019-11-11 19:00:37.184545"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 5], ["index", 3], ["created_at", "2019-11-11 19:00:37.189209"], ["updated_at", "2019-11-11 19:00:37.189209"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 9], ["index", 4], ["created_at", "2019-11-11 19:00:37.194563"], ["updated_at", "2019-11-11 19:00:37.194563"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 6], ["index", 5], ["created_at", "2019-11-11 19:00:37.198831"], ["updated_at", "2019-11-11 19:00:37.198831"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 7], ["index", 6], ["created_at", "2019-11-11 19:00:37.202484"], ["updated_at", "2019-11-11 19:00:37.202484"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 4], ["ingredient_id", 12], ["index", 7], ["created_at", "2019-11-11 19:00:37.206170"], ["updated_at", "2019-11-11 19:00:37.206170"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 5], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-11 19:00:37.209588"], ["updated_at", "2019-11-11 19:00:37.209588"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 5], ["ingredient_id", 3], ["index", 2], ["created_at", "2019-11-11 19:00:37.212868"], ["updated_at", "2019-11-11 19:00:37.212868"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 5], ["ingredient_id", 7], ["index", 3], ["created_at", "2019-11-11 19:00:37.215596"], ["updated_at", "2019-11-11 19:00:37.215596"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.5ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 5], ["ingredient_id", 9], ["index", 4], ["created_at", "2019-11-11 19:00:37.220019"], ["updated_at", "2019-11-11 19:00:37.220019"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.5ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 5], ["ingredient_id", 6], ["index", 5], ["created_at", "2019-11-11 19:00:37.225829"], ["updated_at", "2019-11-11 19:00:37.225829"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 5], ["ingredient_id", 12], ["index", 6], ["created_at", "2019-11-11 19:00:37.231298"], ["updated_at", "2019-11-11 19:00:37.231298"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 6], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-11 19:00:37.236254"], ["updated_at", "2019-11-11 19:00:37.236254"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 6], ["ingredient_id", 4], ["index", 2], ["created_at", "2019-11-11 19:00:37.240521"], ["updated_at", "2019-11-11 19:00:37.240521"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 6], ["ingredient_id", 7], ["index", 3], ["created_at", "2019-11-11 19:00:37.254119"], ["updated_at", "2019-11-11 19:00:37.254119"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 6], ["ingredient_id", 9], ["index", 4], ["created_at", "2019-11-11 19:00:37.258317"], ["updated_at", "2019-11-11 19:00:37.258317"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 6], ["ingredient_id", 6], ["index", 5], ["created_at", "2019-11-11 19:00:37.263149"], ["updated_at", "2019-11-11 19:00:37.263149"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 6], ["ingredient_id", 12], ["index", 6], ["created_at", "2019-11-11 19:00:37.268237"], ["updated_at", "2019-11-11 19:00:37.268237"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-11 19:00:37.272888"], ["updated_at", "2019-11-11 19:00:37.272888"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-11 19:00:37.277201"], ["updated_at", "2019-11-11 19:00:37.277201"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 6], ["index", 3], ["created_at", "2019-11-11 19:00:37.281193"], ["updated_at", "2019-11-11 19:00:37.281193"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 7], ["index", 4], ["created_at", "2019-11-11 19:00:37.284958"], ["updated_at", "2019-11-11 19:00:37.284958"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 8], ["index", 5], ["created_at", "2019-11-11 19:00:37.288329"], ["updated_at", "2019-11-11 19:00:37.288329"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 9], ["index", 6], ["created_at", "2019-11-11 19:00:37.291391"], ["updated_at", "2019-11-11 19:00:37.291391"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 7], ["ingredient_id", 12], ["index", 7], ["created_at", "2019-11-11 19:00:37.294445"], ["updated_at", "2019-11-11 19:00:37.294445"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-11 19:00:37.297622"], ["updated_at", "2019-11-11 19:00:37.297622"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-11 19:00:37.300967"], ["updated_at", "2019-11-11 19:00:37.300967"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 5], ["index", 3], ["created_at", "2019-11-11 19:00:37.304232"], ["updated_at", "2019-11-11 19:00:37.304232"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 8], ["index", 4], ["created_at", "2019-11-11 19:00:37.309187"], ["updated_at", "2019-11-11 19:00:37.309187"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 9], ["index", 5], ["created_at", "2019-11-11 19:00:37.312429"], ["updated_at", "2019-11-11 19:00:37.312429"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 6], ["index", 6], ["created_at", "2019-11-11 19:00:37.315630"], ["updated_at", "2019-11-11 19:00:37.315630"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 7], ["index", 7], ["created_at", "2019-11-11 19:00:37.319220"], ["updated_at", "2019-11-11 19:00:37.319220"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 8], ["ingredient_id", 12], ["index", 8], ["created_at", "2019-11-11 19:00:37.323170"], ["updated_at", "2019-11-11 19:00:37.323170"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-11 19:00:37.327601"], ["updated_at", "2019-11-11 19:00:37.327601"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-11 19:00:37.331013"], ["updated_at", "2019-11-11 19:00:37.331013"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 10], ["index", 3], ["created_at", "2019-11-11 19:00:37.334407"], ["updated_at", "2019-11-11 19:00:37.334407"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 6], ["index", 4], ["created_at", "2019-11-11 19:00:37.338196"], ["updated_at", "2019-11-11 19:00:37.338196"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 11], ["index", 5], ["created_at", "2019-11-11 19:00:37.342722"], ["updated_at", "2019-11-11 19:00:37.342722"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 7], ["index", 6], ["created_at", "2019-11-11 19:00:37.347056"], ["updated_at", "2019-11-11 19:00:37.347056"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 8], ["index", 7], ["created_at", "2019-11-11 19:00:37.351068"], ["updated_at", "2019-11-11 19:00:37.351068"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 9], ["index", 8], ["created_at", "2019-11-11 19:00:37.365400"], ["updated_at", "2019-11-11 19:00:37.365400"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 9], ["ingredient_id", 12], ["index", 9], ["created_at", "2019-11-11 19:00:37.369678"], ["updated_at", "2019-11-11 19:00:37.369678"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 1], ["index", 1], ["created_at", "2019-11-11 19:00:37.376237"], ["updated_at", "2019-11-11 19:00:37.376237"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 2], ["index", 2], ["created_at", "2019-11-11 19:00:37.380696"], ["updated_at", "2019-11-11 19:00:37.380696"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 5], ["index", 3], ["created_at", "2019-11-11 19:00:37.384429"], ["updated_at", "2019-11-11 19:00:37.384429"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 10], ["index", 4], ["created_at", "2019-11-11 19:00:37.388378"], ["updated_at", "2019-11-11 19:00:37.388378"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.2ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 6], ["index", 5], ["created_at", "2019-11-11 19:00:37.391812"], ["updated_at", "2019-11-11 19:00:37.391812"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 11], ["index", 6], ["created_at", "2019-11-11 19:00:37.395570"], ["updated_at", "2019-11-11 19:00:37.395570"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 7], ["index", 7], ["created_at", "2019-11-11 19:00:37.399027"], ["updated_at", "2019-11-11 19:00:37.399027"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 8], ["index", 8], ["created_at", "2019-11-11 19:00:37.403281"], ["updated_at", "2019-11-11 19:00:37.403281"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.4ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 9], ["index", 9], ["created_at", "2019-11-11 19:00:37.407843"], ["updated_at", "2019-11-11 19:00:37.407843"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBurger Create (0.3ms)[0m  [1m[32mINSERT INTO "burgers" ("recipe_id", "ingredient_id", "index", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["recipe_id", 10], ["ingredient_id", 12], ["index", 10], ["created_at", "2019-11-11 19:00:37.411948"], ["updated_at", "2019-11-11 19:00:37.411948"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 14:02:49 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.9ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 34ms (Views: 0.1ms | ActiveRecord: 3.8ms | Allocations: 21185)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 14:02:49 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1981)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 14:03:00 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5873)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 14:03:00 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 14:03:03 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 5873)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 14:03:03 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 14:03:29 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5873)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 14:03:29 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 14:08:14 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5873)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 14:08:14 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 1954)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 14:08:24 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 14:08:24 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 14:10:06 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.3ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 14:10:06 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 14:10:23 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 14:10:23 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 14:13:55 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 14:13:55 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 14:14:09 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 14:14:09 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 14:14:29 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.3ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 14:14:29 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
+Started GET "/burgers_recipe/1" for ::1 at 2019-11-11 14:16:01 -0500
+Processing by BurgersController#ingredients as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBurger Load (0.2ms)[0m  [1m[34mSELECT "burgers".* FROM "burgers" WHERE (recipe_id = '1' )[0m
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mIngredient Load (0.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/burgers_controller.rb:16:in `ingredients'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5855)
+
+
+Started GET "/ingredients" for ::1 at 2019-11-11 14:16:01 -0500
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1951)
+
+
